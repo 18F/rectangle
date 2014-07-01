@@ -17,8 +17,8 @@ canvas{
 	border:black solid 1px;
 	float:left;
 	margin-bottom:10px;
+    background:url(canvas_background.png);
  }
-
 
 #clr{
 	margin:0 auto;
