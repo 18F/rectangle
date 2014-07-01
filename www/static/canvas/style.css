@@ -143,11 +143,11 @@ padding:10px;
 }
 
 #themain{
-	border: 1px solid #ccc;
+	/* border: 1px solid #ccc;
 	-webkit-box-shadow: 2px 2px 2px #aaa;
 	-moz-box-shadow: 2px 2px 2px #aaa;
 	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
+	-moz-border-radius: 10px; */
 	padding: 20px;
 }
 

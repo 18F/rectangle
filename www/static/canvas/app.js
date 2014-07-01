@@ -6,8 +6,10 @@ var a=false;var b,c="";var d=document.getElementById("can");
 var e=d.getContext("2d");e.strokeStyle="red";
 e.lineWidth=5;e.lineCap="round";
 e.fillStyle="#fff";e.fillRect(0,0,d.width,d.height);
-$("#bsz").change(function(a){e.lineWidth=this.value});
-$("#bcl").change(function(a){e.strokeStyle=this.value});
+e.lineWidth=30;
+e.strokeStyle='#000000';
+// $("#bsz").change(function(a){e.lineWidth=this.value});
+// $("#bcl").change(function(a){e.strokeStyle=this.value});
 $("#can").mousedown(function(d){saveRestorePoint();a=true;e.save();b=d.pageX-this.offsetLeft;c=d.pageY-this.offsetTop});
 
 
