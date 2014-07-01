@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	.hidden { display: none; }
+	</style>
+</head>
+<body>
+	<h1>click on the rectangle</h1>
+
+	<a class="shape triangle">
+		<img src="shapes/triangle.png" border="0">
+	</a>
+
+	<a class="shape rectangle">
+		<img src="shapes/rectangle.png" border="0">
+	</a>
+
+	<a class="shape circle">
+		<img src="shapes/circle.png" border="0">
+	</a>
+
+	<audio id="intro-sound" autoplay="autoplay">
+	    <source src="sounds/ClickOnTheRectangle.m4a" />     
+	</audio>
+
+	<audio id="right-sound">
+	    <source src="sounds/GreatJob.m4a" />     
+	</audio>
+
+	<audio id="wrong-sound">
+	    <source src="sounds/TryAgain.m4a" />     
+	</audio>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+
+$(function() {
+
+	$audio_right = $('#right-sound');
+	$audio_wrong = $('#wrong-sound');
+
+	$('.shape').on('click', function() {
+
+		if($(this).hasClass('rectangle')) {
+			$audio_right.get(0).play();
+			// alert('great job!');
+		} else {
+			$audio_wrong.get(0).play();
+			// alert('try again!');
+		}
+	});
+
+});
+
+</script>
+
+</body>
+</html>
