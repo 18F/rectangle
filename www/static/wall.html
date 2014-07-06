@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="canvas/style.css" type="text/css" media="screen" />
+	<style>
+	.hidden { display: none; }
+	#lets-draw-img { width: 420px; height: 300px; }
+	#can { 
+		/*opacity:0.9; */
+		/*background:url(canvas_background_V4.jpg) no-repeat 0 0;*/
+	}
+
+	#intro {
+		height: 100px;
+		text-align: left;
+		margin-left: 100px;
+	}
+	#wall-img {
+		position: absolute;
+		top: 100px;
+		left: 100px;
+	}
+
+	#themain {
+		position: absolute;
+		top: 465px;
+		left: 220px;
+	}
+
+	#done-btn {
+		position: absolute;
+		left: 800px;
+		top: 500px;
+	}
+	#themain img#throne {
+		width: 200px;
+		height: 250px;
+	}
+
+
+	</style>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="canvas/app.js"></script>
+
+</head>
+
+<body>
+	<div id="intro">
+		<h1>Trace a Rectangle</h1>
+		<h2>Draw a door, and then click "DONE".</h2>
+	</div>
+
+	<img id="wall-img" src="wall-half.jpg" border="0">
+
+	<div id="you-try">
+		<div id="themain">
+			<canvas id="can" width="200" height="250" ></canvas>
+			<div id="clr"></div>
+			<img id="throne" class="hidden" src="iron_throne_small.png" border="0">
+		</div>
+	</div>
+
+	</div>
+
+	<button id="done-btn">DONE</button>
+	
+<script>
+
+	$('#done-btn').on('click', function() {
+		$('#can, #clr').hide();
+		$('#throne').show();
+		// show treasure
+	});
+
+</script>
+
+</body>
+</html>
