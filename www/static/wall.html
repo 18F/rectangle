@@ -19,11 +19,19 @@
 		position: absolute;
 		top: 100px;
 		left: 100px;
+                width: 400px;
+		height: 700px;
 	}
 
 	#themain {
 		position: absolute;
 		top: 465px;
+		left: 220px;
+	}
+
+	#credits {
+		position: absolute;
+		top: 1000px;
 		left: 220px;
 	}
 
@@ -40,7 +48,7 @@
 
 	</style>
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="canvas/app.js"></script>
 
 </head>
@@ -51,13 +59,13 @@
 		<h2>Draw a door, and then click "DONE".</h2>
 	</div>
 
-	<img id="wall-img" src="wall-half.jpg" border="0">
+	<img id="wall-img" src="http://upload.wikimedia.org/wikipedia/commons/9/96/Palazzo_Comunale03.jpg" border="0">
 
 	<div id="you-try">
 		<div id="themain">
 			<canvas id="can" width="200" height="250" ></canvas>
 			<div id="clr"></div>
-			<img id="throne" class="hidden" src="iron_throne_small.png" border="0">
+			<img id="throne" class="hidden" src="http://upload.wikimedia.org/wikipedia/commons/6/6f/Roman_throne_LosAngeles_County_Museum_California.jpg" border="0">
 		</div>
 	</div>
 
@@ -75,5 +83,10 @@
 
 </script>
 
+	<div id="credits">
+	  "Roman throne LosAngeles County Museum California" by mharrsch - Flickr. Licensed under Creative Commons Attribution-Share Alike 2.0 via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Roman_throne_LosAngeles_County_Museum_California.jpg#mediaviewer/File:Roman_throne_LosAngeles_County_Museum_California.jpg
+	  <p>
+	  "PortCullis"/Palazzo Comunale03 By Georges Jansoone (Own work) [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC-BY-2.5 (http://creativecommons.org/licenses/by/2.5)], via Wikimedia Commons
+	  </div>
 </body>
 </html>
