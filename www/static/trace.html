@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="canvas/style.css" type="text/css" media="screen" />
+	<style>
+	.hidden { display: none; }
+	#lets-draw-img { width: 420px; height: 300px; }
+	#can { 
+		opacity:0.5; 
+		background:url(canvas_background_V4.jpg) no-repeat 0 0;
+	}
+	</style>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="canvas/app.js"></script>
+
+</head>
+
+<body>
+	<h1>Trace a Rectangle</h1>
+
+	<h2>Let's draw a rectangle.</h2>
+
+	<img id="lets-draw-img" src="animated_rectangle_v3.gif" border="0">
+
+	<div id="you-try" class="hidden">
+
+		<h2>Now you try.</h2>
+
+		<div id="themain">
+			<canvas id="can" width="450" height="400" ></canvas>
+			<div id="clr">
+			</div>
+		</div>
+
+	</div>
+	
+	<audio id="lets-draw-sound" autoplay="autoplay">
+	    <source src="sounds/Lets-draw.m4a" />
+	</audio>
+
+	<audio id="you-try-sound">
+	    <source src="sounds/You-try.m4a" />
+	</audio>
+
+<script>
+	setTimeout(function() {
+		$('#you-try-sound').get(0).play();
+		$('#you-try').show();
+	}, 10000);
+</script>
+
+</body>
+</html>
